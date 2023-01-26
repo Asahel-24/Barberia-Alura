@@ -1,0 +1,165 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.centrar-contenido{
+    width: 940px;
+    margin: 0 auto;    
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    font-size: 20px;
+    margin: 0 0 10px;
+    display: block;
+}
+
+.input-padron{
+    padding: 10px 25px;
+    margin: 0 0 20px;
+    display: block;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+footer{
+    text-align: center;
+    background: url(/Imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    margin: 20px;
+}
+
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        text-align: -webkit-center;
+        position: static;
+    }
+
+    nav a{
+        font-size: 17px;
+    }
+
+    .caja, .centrar-contenido{
+        width: auto;
+    }
+
+    form label, form legend, #tabla-horario {
+        font-size: 22px;
+        margin: 0 22px 10px;
+        display: block;
+    }
+
+    .input-padron {
+        padding: 10px 25px;
+        margin: 0 22px 20px;
+        display: block;
+        width: 70%;
+    }
+    .enviar{
+        width: 60%;
+        margin: 0 15%;
+    }    
+}
+
+@media screen and (max-width:290px) {
+
+    nav{
+        text-align: -webkit-center;
+    }
+
+    nav li{
+    display: inline-flex;
+    margin: 0 0 0 7px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: start;
+    }
+
+    nav a{
+        font-size: 13px;
+    }
+}
