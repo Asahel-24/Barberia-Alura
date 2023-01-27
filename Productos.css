@@ -172,3 +172,23 @@ footer{
         font-size: 17px;
     }
 }
+
+/*Para tabletas*/
+
+@media screen and (max-width:1000px) {
+    .caja, .mapa-contenido{
+        width: auto;
+    }
+
+    .principal{
+        width: auto;
+    }
+
+    .titulo_principal{
+        font-size: 2.5em;
+    }
+
+    .principal p, .mapa p{
+        font-size: 1.2em;
+    }
+}
